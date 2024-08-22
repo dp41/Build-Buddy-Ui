@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Initial styles for dropdown */
+        .dropdown-menu {
+            display: none;
+            max-height: 200px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        /* Styles for the mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu.show {
+            display: block;
+        }
+
+        /* Rotate arrow icon when menu is open */
+        .arrow-down {
+            transition: transform 0.3s;
+        }
+
+        .arrow-down.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex items-center justify-between h-16 px-4 md:px-6 bg-gray-800 border-b border-gray-700">
+        <a class="flex items-center gap-2 text-lg font-semibold text-white" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="h-6 w-6">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+            </svg>
+            <span>Build Buddy</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white">
+            <div class="relative">
+                <a class="flex items-center gap-1 hover:underline cursor-pointer" id="componentsMenuBtn">
+                    Components
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-down h-4 w-4">
+                        <path d="M4 8l4 4 4-4" />
+                    </svg>
+                </a>
+                <div class="absolute left-0 mt-2 w-48 bg-gray-700 text-white dropdown-menu" id="componentsMenu">
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cpu">CPU</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=gpu">GPU</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=ram">RAM</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=storage">Storage</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=motherboard">Motherboard</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=power_supply">Power Supply</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cabinet">Cabinet</a>
+                    <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cooler">Cooler</a>
+                </div>
+            </div>
+            <a class="hover:underline" href="#">Custom Build</a>
+            <a class="hover:underline" href="#">Pre-Built PC</a>
+            <a class="hover:underline" href="#">Laptops</a>
+            <a class="hover:underline" href="/pages/Compare_Components/components.html">Compare Components</a>
+            <a class="hover:underline" href="#">Build Guide</a>
+            <a class="hover:underline" href="/pages/Profile/userProfile/userProfile.html">Profile</a>
+            <a class="hover:underline" href="#">Contact Us</a>
+            <a class="hover:underline" href="#">About Us</a>
+        </nav>
+        <button id="mobileMenuBtn"
+            class="inline-flex items-center justify-center h-10 w-10 rounded-md text-sm font-medium border border-gray-600 bg-gray-800 hover:bg-gray-600 hover:text-white ring-offset-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="h-6 w-6">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+            </svg>
+        </button>
+    </header>
+
+    <nav class="mobile-menu md:hidden bg-gray-800 text-white p-4" id="mobileMenu">
+        <div class="relative">
+            <a class="flex items-center gap-1 block py-2 cursor-pointer" id="componentsMenuBtnMobile">
+                Components
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-down h-4 w-4">
+                    <path d="M4 8l4 4 4-4" />
+                </svg>
+            </a>
+            <div class="mt-2 bg-gray-700 text-white dropdown-menu" id="componentsMenuMobile">
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cpu">CPU</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=gpu">GPU</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=ram">RAM</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=storage">Storage</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=motherboard">Motherboard</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=power_supply">Power Supply</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cabinet">Cabinet</a>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="/pages/Component_List/componentList.html?type=cooler">Cooler</a>
+            </div>
+        </div>
+        <a class="block py-2" href="#">Custom Build</a>
+        <a class="block py-2" href="#">Pre-Built PC</a>
+        <a class="block py-2" href="#">Laptops</a>
+        <a class="block py-2" href="/pages/Compare_Components/components.html">Compare Components</a>
+        <a class="block py-2" href="#">Build Guide</a>
+        <a class="block py-2" href="/pages/Profile/userProfile/userProfile.htm">Profile</a>
+        <a class="block py-2" href="#">Contact Us</a>
+        <a class="block py-2" href="#">About Us</a>
+    </nav>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const componentsMenuBtn = document.getElementById('componentsMenuBtn');
+            const componentsMenu = document.getElementById('componentsMenu');
+            const componentsMenuBtnMobile = document.getElementById('componentsMenuBtnMobile');
+            const componentsMenuMobile = document.getElementById('componentsMenuMobile');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const arrowDown = document.querySelectorAll('.arrow-down');
+
+            componentsMenuBtn.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent event from propagating to document
+                componentsMenu.classList.toggle('show');
+                componentsMenuMobile.classList.remove('show'); // Close mobile menu
+                arrowDown.forEach(arrow => arrow.classList.toggle('rotate'));
+            });
+
+            componentsMenuBtnMobile.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent event from propagating to document
+                componentsMenuMobile.classList.toggle('show');
+                arrowDown.forEach(arrow => arrow.classList.toggle('rotate'));
+            });
+
+            mobileMenuBtn.addEventListener('click', function (event) {
+                event.stopPropagation(); // Prevent event from propagating to document
+                mobileMenu.classList.toggle('show');
+                componentsMenu.classList.remove('show'); // Close desktop menu
+                componentsMenuMobile.classList.remove('show'); // Close mobile dropdown
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!componentsMenu.contains(event.target) && !componentsMenuBtn.contains(event.target)) {
+                    componentsMenu.classList.remove('show');
+                    arrowDown.forEach(arrow => arrow.classList.remove('rotate'));
+                }
+                if (!componentsMenuMobile.contains(event.target) && !componentsMenuBtnMobile.contains(event.target)) {
+                    componentsMenuMobile.classList.remove('show');
+                    arrowDown.forEach(arrow => arrow.classList.remove('rotate'));
+                }
+                if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+                    mobileMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Detail Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100 relative">
+
+    <div class="container mx-auto p-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Left Section: Component Image -->
+            <div id="componentImage" class="flex-1 bg-white p-4 rounded-lg shadow-md flex items-center justify-center">
+                <img src="" alt="Component Image" class="w-full h-auto max-h-[400px] object-contain rounded-md" id="componentImageSrc">
+            </div>
+
+            <!-- Right Section: Component Details -->
+            <div class="flex-1 bg-white p-4 rounded-lg shadow-md">
+                <h1 id="componentName" class="text-2xl font-bold mb-4 animate-text">Component Name</h1>
+                  
+                <!-- Price of the Component -->
+                <p id="componentPrice" class="text-xl font-semibold mb-4 animate-text">Price: 0.00</p>
+
+                <!-- Updated to a div to allow dynamic list content -->
+                <div id="componentDescription" class="mb-4 animate-text">
+                    <!-- Description list will be inserted here -->
+                </div>
+            
+                <!-- Component Specification Table -->
+                <table id="specificationTable" class="min-w-full divide-y divide-gray-200 mb-6 animate-text">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-gray-50 text-left text-sm font-medium text-gray-500">Specification</th>
+                            <th class="py-2 px-4 bg-gray-50 text-left text-sm font-medium text-gray-500">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <!-- Specifications will be inserted here -->
+                    </tbody>
+                </table>
+            
+                <!-- Price History Chart -->
+                <canvas id="priceChart" class="w-full h-64"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="fixed top-4 left-4 w-12 h-12 rounded-full bg-gray-800 text-white flex items-center justify-center shadow-md cursor-pointer z-50 hover:bg-gray-700" onclick="history.back()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+    </div>
+
+    <script type="module" src="componentDetail.js"></script>
+    <script type="module" src="../bgAnimation.js"></script>
+</body>
+
+</html>

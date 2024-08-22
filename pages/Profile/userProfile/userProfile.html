@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('/Images/bg.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+    }
+    .glass-effect {
+      backdrop-filter: blur(10px);
+      background: rgba(156, 20, 20, 0.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    .product-card {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-black text-white flex flex-col items-center min-h-screen p-4">
+  
+  <!-- Profile Section -->
+  <div class="glass-effect p-6 rounded-lg w-full max-w-4xl flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 mb-6">
+    
+    <!-- Profile Image -->
+    <div class="flex-none mb-4 md:mb-0">
+      <img src="/Images/profileImg2.jpeg" alt="Profile Image" class="w-32 h-32 rounded-full object-cover">
+    </div>
+    <!-- Profile Details -->
+    <div class="flex-1 space-y-4">
+      <div id="details" class="space-y-4">
+        <!-- Name -->
+        <div id="name-field" class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <label class="font-semibold">Name:</label>
+          <span id="name-label" class="text-gray-300">Rutva Patel</span>
+          <input type="text" id="name-input" class="hidden border border-gray-300 rounded p-2 text-black" placeholder="Enter your name" />
+        </div>
+        <!-- Email -->
+        <div id="email-field" class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <label class="font-semibold">Email:</label>
+          <span id="email-label" class="text-gray-300">rutvapatel0812@gmail.com</span>
+          <input type="email" id="email-input" class="hidden border border-gray-300 rounded p-2 text-black" placeholder="Enter your email" />
+        </div>
+        <!-- Phone Number -->
+        <div id="phone-field" class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <label class="font-semibold">Phone:</label>
+          <span id="phone-label" class="text-gray-300">+1 (856) 725-3026</span>
+          <input type="text" id="phone-input" class="hidden border border-gray-300 rounded p-2 text-black" placeholder="Enter your phone number" />
+        </div>
+      </div>
+
+      <!-- Note: update details in database  -->
+      <button id="edit-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Edit Details
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Division -->
+  <div class="glass-effect p-6 rounded-lg w-full h-fit max-w-4xl">
+    <h2 class="text-xl md:text-2xl font-bold mb-4">Wishlist</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 overflow-y-auto p-3" style="max-height: 600px;">
+      <!-- Product Card Example -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/productDetails/productDetail.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719130966/AMD-Ryzen-7-7800X3D_ducjmv.avif" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <!-- Repeat Product Card as needed -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719131033/MSI_GeForce_RTX_3060_Ventus_2X_12G_gw8dz1.png" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <!-- Add more product cards as necessary -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719131067/G.Skill_Trident_Z_RGB_16_GB_oza6ce.webp" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <!-- Repeat Product Card as needed -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1721229324/Gigabyte-B650-Aorus-Elite-AX-Motherboard-2_ziguux.jpg" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719131016/Gigabyte_P550B_jjiddn.png" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <!-- Repeat Product Card as needed -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/NZXT_H9_Flow_b4aqiq.avif" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719131088/Western_Digital_Black_SN770_ymu7zc.png" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+      <!-- Repeat Product Card as needed -->
+      <div class="product-card bg-gray-800 p-4 rounded-lg shadow-lg" onclick="window.location.href='/product-details.html'">
+        <img src="https://res.cloudinary.com/dwn8lficg/image/upload/v1719131053/Thermalright_Peerless_Assassin_120_SE_ifqxvx.jpg" alt="Product Image" class="w-full h-52 object-cover mb-4 rounded">
+        <h3 class="text-md md:text-lg font-semibold mb-2">Product Name</h3>
+        <p class="text-gray-300 text-sm">Brief product description goes here. This is a short description.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('edit-btn').addEventListener('click', function() {
+      const details = document.getElementById('details');
+      const inputs = details.querySelectorAll('input');
+      const labels = details.querySelectorAll('span');
+
+      inputs.forEach(input => input.classList.toggle('hidden'));
+      labels.forEach(label => label.classList.toggle('hidden'));
+
+      this.textContent = this.textContent === 'Edit Details' ? 'Edit Details' : 'Save Details';
+    });
+  </script>
+</body>
+</html>
