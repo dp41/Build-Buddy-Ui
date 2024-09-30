@@ -73,7 +73,12 @@ function addComparisonColumn() {
     const newColumn = document.createElement('div');
     newColumn.className = 'comparison-column relative flex flex-col items-center p-4 bg-white shadow-lg rounded-lg w-full md:w-1/2 lg:w-1/4';
     newColumn.innerHTML = `
-      <button class="remove-column absolute top-2 right-2 w-8 h-8 rounded-full bg-red-500 text-white text-lg flex items-center justify-center opacity-50" disabled>x</button>
+      <button class="remove-column absolute top-2 right-2 w-8 h-8 rounded-full bg-red-500 text-white text-lg flex items-center justify-center">
+        <!-- SVG icon for the close button -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
       <select class="product-dropdown p-2 border border-gray-300 rounded w-full mt-10">
         <option value="" disabled selected>Select Product</option>
       </select>
@@ -93,7 +98,7 @@ function addComparisonColumn() {
 }
 
 function removeComparisonColumn(event) {
-  if (event.target.classList.contains('remove-column')) {
+  if (event.target.closest('.remove-column')) {
     const columns = document.querySelectorAll('.comparison-column');
     
     if (columns.length > 2) {

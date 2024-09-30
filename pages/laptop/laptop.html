@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Categories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Header styles */
+    .header {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url("/Images/laptop/bg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-title {
+      font-size: clamp(24px, 5vw, 48px);
+      white-space: nowrap;
+      line-height: 1.2;
+      color: #f0f0f0;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .header-subtitle {
+      font-size: clamp(14px, 3vw, 20px);
+    }
+
+    /* Button hover effect */
+    .explore-btn {
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+    .explore-btn:hover {
+      background-color: #FFC107; /* Original yellow color from previous code */
+      color: #000; /* Text color changes to black */
+      transform: translateY(-3px); /* Subtle lift effect */
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="header p-8">
+    <h1 class="header-title font-bold">Explore Your Perfect Laptop</h1>
+    <p class="header-subtitle text-gray-400 mt-4">Choose from Gaming, Business, or Budget laptops</p>
+  </header>
+
+  <!-- Laptop Categories -->
+  <section class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+    <!-- Gaming Laptop Card -->
+    <div class="category-card relative bg-gray-700 rounded-lg shadow-lg hover:bg-gray-600 transition duration-300 flex flex-col">
+      <img src="/Images/laptop/Gaming.jpg" alt="Gaming Laptop" class="w-full h-64 object-cover opacity-70 rounded-t-lg">
+      <div class="p-6 flex flex-col flex-grow">
+        <h2 class="text-2xl font-semibold">Gaming Laptops</h2>
+        <p class="text-gray-300 mt-2 flex-grow">Powerful laptops designed for gaming enthusiasts. These laptops are equipped with high-performance CPUs, dedicated GPUs, and optimized cooling systems to run the latest games smoothly</p>
+        <a href="/gaming-laptops.html">
+          <button class="explore-btn mt-4 px-4 py-2 bg-white text-black rounded">Explore</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Business Laptop Card -->
+    <div class="category-card relative bg-gray-700 rounded-lg shadow-lg hover:bg-gray-600 transition duration-300 flex flex-col">
+      <img src="/Images/laptop/Business.png" alt="Business Laptop" class="w-full h-64 object-cover opacity-70 rounded-t-lg">
+      <div class="p-6 flex flex-col flex-grow">
+        <h2 class="text-2xl font-semibold">Business Laptops</h2>
+        <p class="text-gray-300 mt-2 flex-grow">Efficient laptops for professionals and business use. These laptops focus on portability, battery life, and security, providing features that keep your data safe and your productivity high.</p>
+        <a href="/business-laptops.html">
+          <button class="explore-btn mt-4 px-4 py-2 bg-white text-black rounded">Explore</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Budget Laptop Card -->
+    <div class="category-card relative bg-gray-700 rounded-lg shadow-lg hover:bg-gray-600 transition duration-300 flex flex-col">
+      <img src="/Images/laptop/Budget.jpg" alt="Budget Laptop" class="w-full h-64 object-cover opacity-70 rounded-t-lg">
+      <div class="p-6 flex flex-col flex-grow">
+        <h2 class="text-2xl font-semibold">Budget Laptops</h2>
+        <p class="text-gray-300 mt-2 flex-grow">Affordable laptops that meet everyday needs. Budget laptops offer good performance for everyday tasks such as browsing, streaming, and document editing, all at an affordable price.</p>
+        <a href="/budget-laptops.html">
+          <button class="explore-btn mt-4 px-4 py-2 bg-white text-black rounded">Explore</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-6 text-center text-gray-400">
+    <p>© 2024 Laptop Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
