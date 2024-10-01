@@ -1,7 +1,8 @@
 // componentsDetails.js
 export const componentData = {
-cpu: {
-  "AMD Ryzen 7 7800X3D": {
+cpu: [
+  {
+    name: "AMD Ryzen 7 7800X3D",
     price: "34,900",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130966/AMD-Ryzen-7-7800X3D_ducjmv.avif",
     description: "The AMD Ryzen 7 7800X3D is built for high performance. It features 8 cores and 16 threads, ensuring smooth multitasking and high-speed processing. With a base clock of 4.2 GHz and a boost clock of 5.0 GHz, it handles demanding tasks with ease. The AM5 socket provides compatibility with the latest motherboards. Integrated Radeon graphics make it a versatile choice for gaming and productivity.",
@@ -22,7 +23,8 @@ cpu: {
       { date: "2024-09-01", price: "34,200" }
     ]
   },
-  "AMD Ryzen 5 5600X": {
+   {
+    name: "AMD Ryzen 5 5600X",
     price: "14,970",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130965/AMD-Ryzen-5-5600X_vrzeu4.avif",
     description: "The AMD Ryzen 5 5600X offers excellent value for mid-range builds. With 6 cores and 12 threads, it delivers strong performance in both gaming and productivity. A base clock of 3.7 GHz and boost clock of 4.6 GHz ensure quick responses and smooth operations. Its AM4 socket provides broad compatibility with various motherboards. Designed for systems with discrete graphics, it’s ideal for dedicated GPU setups.",
@@ -43,7 +45,8 @@ cpu: {
       { date: "2024-09-01", price: "14,250" }
     ]
   },
-  "Intel Core i9-14900K": {
+  {
+    name: "Intel Core i9-14900K", 
     price: "51,999",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130967/Intel-Core-_i9-14900K_eg8qm1.jpg",
     description: "The Intel Core i9-14900K is a powerhouse for enthusiasts and professionals. Featuring 24 cores and 32 threads, it excels in multitasking and intensive workloads. Its base clock of 3.2 GHz can boost up to an impressive 6 GHz, making it perfect for high-performance computing. The LGA 1700 socket ensures future-proofing with new motherboard support. Integrated Intel UHD Graphics 770 provides decent onboard graphics performance.",
@@ -64,7 +67,8 @@ cpu: {
       { date: "2024-09-01", price: "51,000" }
     ]
   },
-  "Intel Core i7-14700K": {
+  {
+    name: "Intel Core i7-14700K",
     price: "37,850",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130970/Intel-Core-i7-14700K_zpko8j.jpg",
     description: "The Intel Core i7-14700K balances performance and efficiency with 20 cores and 28 threads. Ideal for gamers and content creators, it offers a base clock of 3.4 GHz and a boost clock of 5.6 GHz. The LGA 1700 socket supports the latest motherboards, ensuring a future-proof build. Integrated Intel UHD Graphics 770 handles everyday tasks without needing a discrete GPU.",
@@ -85,7 +89,8 @@ cpu: {
       { date: "2024-09-01", price: "37,000" }
     ]
   },
-  "AMD Ryzen 9 7900X": {
+  {
+    name: "AMD Ryzen 9 7900X",
     price: "36,700",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130966/AMD-Ryzen-9-7900X_ct6srt.avif",
     description: "The AMD Ryzen 9 7900X offers top-tier performance with 12 cores and 24 threads. It’s built for demanding applications and gaming with a base clock of 4.7 GHz and a boost clock of 5.6 GHz. The AM5 socket provides compatibility with the latest motherboard technology. Integrated Radeon graphics offer reliable performance for everyday tasks.",
@@ -106,7 +111,8 @@ cpu: {
       { date: "2024-09-01", price: "36,000" }
     ]
   },
-  "Intel Core i5-13600KF": {
+{
+  name: "Intel Core i5-13600KF",
     price: "26,500",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130969/Intel-Core-i5-13600KF_nfx5qe.jpg",
     description: "The Intel Core i5-13600KF is a solid mid-range option with 16 cores and 20 threads. It offers a base clock of 3.5 GHz and a boost clock of 5.1 GHz, making it great for gaming and productivity. The LGA 1700 socket ensures compatibility with newer motherboards. Designed for systems with discrete graphics, it’s perfect for dedicated GPU setups.",
@@ -127,9 +133,10 @@ cpu: {
       { date: "2024-09-01", price: "25,500" }
     ]
   }
-},
-gpu: {
-  "MSI GeForce RTX 3060 Ventus 2X 12G": {
+],
+gpu: [
+{
+  name:   "MSI GeForce RTX 3060 Ventus 2X 12G",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131033/MSI_GeForce_RTX_3060_Ventus_2X_12G_gw8dz1.png",
     description:
@@ -151,7 +158,8 @@ gpu: {
       { date: "2024-09-08", price: "26,580" }
     ],
   },
-  "Gigabyte EAGLE OC": {
+   {
+    name: "Gigabyte EAGLE OC",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131032/Gigabyte_EAGLE_OC_gzqz4y.webp",
     description:
@@ -173,7 +181,8 @@ gpu: {
       { date: "2024-09-08", price: "29,379" }
     ],
   },
-  "Asus ROG STRIX GAMING OC": {
+  {
+    name: "Asus ROG STRIX GAMING OC",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131031/Asus_ROG_STRIX_GAMING_OC_kvwpx0.png",
     description:
@@ -195,7 +204,8 @@ gpu: {
       { date: "2024-09-08", price: "2,20,499" }
     ],
   },
-  "XFX Speedster MERC 310 Black Edition": {
+ {
+  name: "XFX Speedster MERC 310 Black Edition",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131036/XFX_Speedster_MERC_310_Black_Edition_f1upcm.jpg",
     description:
@@ -217,7 +227,8 @@ gpu: {
       { date: "2024-09-08", price: "1,30,244" }
     ],
   },
-  "Sapphire PULSE": {
+   {
+    name: "Sapphire PULSE",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131034/Sapphire_PULSE_c0e9ga.jpg",
     description:
@@ -239,9 +250,10 @@ gpu: {
       { date: "2024-09-08", price: "75,800" }
     ],
   },
-},
-  ram: {
-    "G.Skill Trident Z RGB 16 GB": {
+],
+  ram:[ 
+     {
+      name: "G.Skill Trident Z RGB 16 GB",
       image:
         "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131067/G.Skill_Trident_Z_RGB_16_GB_oza6ce.webp",
       price: "5,450",
@@ -262,7 +274,8 @@ gpu: {
         { date: "2024-09-08", price: "5,450" }
       ],
     },
-    "G.Skill Trident Z 32GB": {
+   {
+    name:  "G.Skill Trident Z 32GB",
       image:
         "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131068/G.Skill_Trident_Z5_RGB_32_GB_lgluqm.jpg",
       price: "12,440",
@@ -283,7 +296,8 @@ gpu: {
         { date: "2024-09-08", price: "12,440" }
       ],
     },
-    "Corsair Vengeance LPX 32 GB": {
+    {
+      name:"Corsair Vengeance LPX 32 GB",
       image:
         "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131066/Corsair_Vengeance_LPX_32_GB_hb9dqn.jpg",
       price: "15,669",
@@ -304,7 +318,8 @@ gpu: {
         { date: "2024-09-08", price: "15,669" }
       ],
     },
-    "Corsair Dominator Platinum RGB 64 GB": {
+    {
+      name: "Corsair Dominator Platinum RGB 64 GB",
       image:
         "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131064/Corsair_Dominator_Platinum_RGB_64_GB_exwy8u.jpg",
       price: "37,989",
@@ -325,7 +340,8 @@ gpu: {
         { date: "2024-09-08", price: "37,989" }
       ],
     },
-    "Kingston FURY 128 GB": {
+    {
+      name: "Kingston FURY 128 GB",
       image:
         "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131069/Kingston_FURY_128_GB_pamhqr.jpg",
       price: "58,236",
@@ -347,7 +363,7 @@ gpu: {
       ],
     },
     
-  },
+  ],
   motherboard: {
     "Gigabyte B650 AORUS ELITE AX": {
       image:
@@ -530,8 +546,9 @@ gpu: {
       ],
     },
   },
-power_supply: {
-  "Gigabyte P550B": {
+power_supply: [
+  {
+    name:"Gigabyte P550B",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131016/Gigabyte_P550B_jjiddn.png",
     description:
@@ -553,7 +570,8 @@ power_supply: {
       { date: "2024-09-30", price: "3,650" },
     ],
   },
-  "Gigabyte UD750GM": {
+  {
+    name: "Gigabyte UD750GM",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131018/Gigabyte_UD750GM_ohmqxz.png",
     description:
@@ -575,7 +593,8 @@ power_supply: {
       { date: "2024-09-30", price: "7,250" },
     ],
   },
-  "EVGA SuperNOVA 850 P5": {
+ {
+  name:  "EVGA SuperNOVA 850 P5",
     image:
       "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131015/EVGA_SuperNOVA_850_P5_oqofoz.png",
     description:
@@ -597,10 +616,11 @@ power_supply: {
       { date: "2024-09-30", price: "9,899" },
     ],
   },
-}
+]
 ,
-cabinet: {
-  "NZXT H9 Flow": {
+cabinet: [
+ {
+  name:  "NZXT H9 Flow",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/NZXT_H9_Flow_b4aqiq.avif",
     description: "The NZXT H9 Flow is a high-performance ATX Mid Tower case designed for optimal airflow and cooling efficiency. With a sleek white finish and tempered glass side panels, it combines aesthetics with functionality. The spacious internal layout accommodates up to two 3.5' drives and offers ample room for high-end components. Its external volume of 66.9 liters provides plenty of space for a clean and organized build. Ideal for enthusiasts looking for a stylish and efficient cooling solution.",
     price: "15,220",
@@ -619,7 +639,8 @@ cabinet: {
       { date: "2024-09-01", price: "15,220" }, // Stable price in September
     ],
   },
-  "NZXT H6 Flow": {
+   {
+    name: "NZXT H6 Flow",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/NZXT_H6_Flow_vllmvf.avif",
     description: "The NZXT H6 Flow offers a refined ATX Mid Tower design with excellent airflow capabilities and a clean white appearance. Featuring a tempered glass side panel, it allows for a clear view of your components. The case includes a single 3.5' bay and provides an external volume of 51.8 liters. It's well-suited for both gamers and builders who prioritize cooling performance and a compact design. A versatile choice for those seeking both form and function in their build.",
     price: "10,580",
@@ -638,7 +659,8 @@ cabinet: {
       { date: "2024-09-01", price: "10,580" }, // Stable price in September
     ],
   },
-  "Montech AIR 100 ARGB": {
+  {
+    name: "Montech AIR 100 ARGB",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/Montech_AIR_100_ARGB_ry0uj1.png",
     description: "The Montech AIR 100 ARGB is a compact MicroATX Mid Tower case designed with an emphasis on style and functionality. Its black finish and tempered glass side panel offer a sleek look, while the RGB lighting adds a modern touch. The case supports up to two 3.5' drives and has an external volume of 36.1 liters, making it a great option for smaller builds. Its efficient airflow design ensures your components stay cool and performs well, providing a balance of aesthetics and practicality.",
     price: "5,850",
@@ -657,7 +679,8 @@ cabinet: {
       { date: "2024-09-01", price: "5,850" }, // Stable price in September
     ],
   },
-  "Lian Li O11 Vision": {
+ {
+  name:  "Lian Li O11 Vision",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130941/Lian_Li_O11_Vision_utlfb5.webp",
     description: "The Lian Li O11 Vision is an elegant ATX Mid Tower case known for its premium build quality and high-performance cooling capabilities. With a generous external volume of 67.8 liters and tempered glass panels, it showcases a sophisticated white design. It includes two 3.5' bays and is built to support high-end components and extensive cooling solutions. This case is ideal for users who demand both exceptional cooling performance and a visually striking appearance.",
     price: "14,500",
@@ -676,7 +699,8 @@ cabinet: {
       { date: "2024-09-01", price: "14,500" }, // Stable price in September
     ],
   },
-  "Phanteks XT PRO": {
+ {
+  name:"Phanteks XT PRO",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719130944/Phanteks_XT_PRO_iehh5w.jpg",
     description: "The Phanteks XT PRO is a robust ATX Mid Tower case designed to deliver superior cooling performance with a sleek black finish. It features tempered glass side panels that allow for a clear view of your internal components. The case offers an external volume of 51.8 liters and supports two 3.5' bays, providing ample space for expansion and customization. Ideal for builders who need a reliable, high-performance case that combines durability with style.",
     price: "7,000",
@@ -695,10 +719,11 @@ cabinet: {
       { date: "2024-09-01", price: "7,000" }, // Stable price in September
     ],
   },
-}
+]
 ,
-storage: {
-  "Western Digital Black SN770": {
+storage: [
+  {
+    name: "Western Digital Black SN770",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131088/Western_Digital_Black_SN770_ymu7zc.png",
     description: "The Western Digital Black SN770 is a high-performance SSD designed for gaming and professional use. It offers a 1 TB storage capacity and leverages M.2 PCIe 4.0 technology to deliver fast data transfer speeds. Its compact M.2-2280 form factor ensures compatibility with most modern motherboards. The drive's performance is supported by a reliable design that enhances overall system responsiveness. Ideal for users seeking a balance between speed and storage space, the SN770 delivers consistent performance for intensive applications.",
     price: "6,630",
@@ -718,7 +743,8 @@ storage: {
       { date: "2024-10-01", price: "6,580" }
     ],
   },
-  "Crucial P3 Plus": {
+   {
+    name: "Crucial P3 Plus",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131084/Crucial_P3_Plus_sy0lvb.jpg",
     description: "The Crucial P3 Plus is a reliable and affordable SSD solution that caters to users needing a boost in storage speed and performance. With a 1 TB capacity and M.2 PCIe 4.0 X4 interface, this drive offers substantial improvements over traditional SATA SSDs. Its M.2-2280 form factor makes it easy to install in most systems, while its efficient design ensures high performance at a competitive price. The P3 Plus is an excellent choice for users upgrading from older drives or looking to enhance their system's responsiveness.",
     price: "3,450",
@@ -738,7 +764,8 @@ storage: {
       { date: "2024-10-01", price: "3,380" }
     ],
   },
-  "Samsung 970 Evo Plus": {
+ {
+  name:  "Samsung 970 Evo Plus",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131085/Samsung_970_Evo_Plus_qzybeo.jpg",
     description: "The Samsung 970 Evo Plus is a top-tier SSD renowned for its exceptional speed and durability. With a 500 GB storage capacity, this drive is ideal for users who demand fast data access and transfer rates. The M.2 PCIe 3.0 X4 interface, combined with 512 MB of cache, allows for quick and efficient performance across various applications. Its compact M.2-2280 form factor ensures compatibility with a wide range of systems. This drive is perfect for gamers, content creators, and professionals seeking high performance and reliability.",
     price: "6,799",
@@ -758,7 +785,8 @@ storage: {
       { date: "2024-10-01", price: "6,700" }
     ],
   },
-  "Seagate Barracuda Compute": {
+  {
+    name: "Seagate Barracuda Compute",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131087/Seagate_Barracuda_Compute_lbtgrv.jpg",
     description: "The Seagate Barracuda Compute is a robust 2 TB HDD designed for everyday computing needs. It provides ample storage space with a 256 MB cache to enhance read and write speeds. Its 3.5-inch form factor fits into most standard desktop cases, while the SATA 6.0 Gb/s interface ensures compatibility with a broad range of systems. This HDD is well-suited for users requiring large storage capacities for files, media, and applications. Its reliability and performance make it a solid choice for both personal and professional use.",
     price: "5,799",
@@ -778,7 +806,8 @@ storage: {
       { date: "2024-10-01", price: "5,700" }
     ],
   },
-  "Western Digital Blue": {
+  {
+    name: "Western Digital Blue",
     image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131089/Western_Digital_Blue_macnyp.jpg",
     description: "The Western Digital Blue is a dependable 2 TB HDD that offers substantial storage capacity for various applications. Designed with a 256 MB cache, it provides smooth and efficient data access and retrieval. Its 3.5-inch form factor is compatible with most desktop setups, and the SATA 6.0 Gb/s interface ensures seamless integration with a wide range of systems. Ideal for users who need reliable storage for extensive files and media, the Blue series is known for its durability and consistent performance over time.",
     price: "5,700",
@@ -798,20 +827,21 @@ storage: {
       { date: "2024-10-01", price: "5,600" }
     ],
   }
-}
+]
 ,
-  cooler: {
-    "Thermalright Peerless Assassin 120 SE": {
-      "image": "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131053/Thermalright_Peerless_Assassin_120_SE_ifqxvx.jpg",
-      "description": "The Thermalright Peerless Assassin 120 SE is a high-performance air cooler designed to provide superior cooling efficiency for your CPU. It features a 120 mm fan with a maximum RPM of 1550, delivering excellent airflow and quiet operation. Its sleek black design complements a variety of PC builds. The cooler is compatible with a wide range of sockets, making it a versatile choice for different setups. Ideal for enthusiasts looking to optimize their system's cooling capabilities.",
-      "price": "8,990",
-      "specifications": {
-        "Company": "Thermalright",
-        "RPM": "1550",
-        "Color": "Black",
-        "Size": "120 mm"
+  cooler: [
+    {
+      name: "Thermalright Peerless Assassin 120 SE",
+      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131053/Thermalright_Peerless_Assassin_120_SE_ifqxvx.jpg",
+      description: "The Thermalright Peerless Assassin 120 SE is a high-performance air cooler designed to provide superior cooling efficiency for your CPU. It features a 120 mm fan with a maximum RPM of 1550, delivering excellent airflow and quiet operation. Its sleek black design complements a variety of PC builds. The cooler is compatible with a wide range of sockets, making it a versatile choice for different setups. Ideal for enthusiasts looking to optimize their system's cooling capabilities.",
+      price: "8,990",
+      specifications: {
+        Company: "Thermalright",
+        RPM: "1550",
+        Color: "Black",
+        Size: "120 mm"
       },
-      "socket": [
+      socket: [
         "LGA 1150",
         "LGA 1151",
         "LGA 1155",
@@ -821,23 +851,24 @@ storage: {
         "AM4",
         "AM5"
       ],
-      "priceHistory": [
+     priceHistory: [
         { "date": "2024-08-01", "price": "8,990" },
         { "date": "2024-09-01", "price": "9,050" },
         { "date": "2024-10-01", "price": "8,890" }
       ]
     },
-    "Deepcool GAMMAXX L240 A-RGB": {
-      "image": "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131049/Deepcool_GAMMAXX_L240_A-RGB_diiybp.jpg",
-      "description": "The Deepcool GAMMAXX L240 A-RGB offers efficient liquid cooling with vibrant RGB lighting to enhance the aesthetics of your build. With a 240 mm radiator and an RPM of 1800, it ensures powerful cooling performance while keeping noise levels low. The sleek black design and customizable RGB features make it an attractive choice for gamers and PC builders. It supports a wide range of sockets, ensuring compatibility with various CPUs. A great choice for high-performance cooling and visual flair.",
-      "price": "5,710",
-      "specifications": {
-        "Company": "Deepcool",
-        "RPM": "1800",
-        "Color": "Black",
-        "Size": "240 mm"
+    {
+      name: "Deepcool GAMMAXX L240 A-RGB",
+      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131049/Deepcool_GAMMAXX_L240_A-RGB_diiybp.jpg",
+      description: "The Deepcool GAMMAXX L240 A-RGB offers efficient liquid cooling with vibrant RGB lighting to enhance the aesthetics of your build. With a 240 mm radiator and an RPM of 1800, it ensures powerful cooling performance while keeping noise levels low. The sleek black design and customizable RGB features make it an attractive choice for gamers and PC builders. It supports a wide range of sockets, ensuring compatibility with various CPUs. A great choice for high-performance cooling and visual flair.",
+      price: "5,710",
+      specifications: {
+        Company: "Deepcool",
+        RPM: "1800",
+        Color: "Black",
+        Size: "240 mm"
       },
-      "socket": [
+      socket: [
         "LGA 2066",
         "LGA 2011-v3",
         "LGA 2011",
@@ -848,23 +879,24 @@ storage: {
         "AM5",
         "AM4"
       ],
-      "priceHistory": [
+      priceHistory: [
         { "date": "2024-08-01", "price": "5,710" },
         { "date": "2024-09-01", "price": "5,650" },
         { "date": "2024-10-01", "price": "5,800" }
       ]
     },
-    "NZXT Kraken 240": {
-      "image": "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131051/NZXT_Kraken_240_xmhekm.jpg",
-      "description": "The NZXT Kraken 240 is a premium liquid cooler with a 240 mm radiator, offering top-tier cooling performance for demanding systems. With an RPM of 1800 and a striking black finish, it not only performs well but also looks great in any build. The cooler features a sleek design and high-quality components for reliable cooling. It supports multiple socket types, ensuring compatibility with a range of processors. Ideal for those seeking both high performance and aesthetic appeal.",
-      "price": "11,050",
-      "specifications": {
-        "Company": "NZXT",
-        "RPM": "1800",
-        "Color": "Black",
-        "Size": "240 mm"
+   {
+    name:  "NZXT Kraken 240",
+      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131051/NZXT_Kraken_240_xmhekm.jpg",
+      description: "The NZXT Kraken 240 is a premium liquid cooler with a 240 mm radiator, offering top-tier cooling performance for demanding systems. With an RPM of 1800 and a striking black finish, it not only performs well but also looks great in any build. The cooler features a sleek design and high-quality components for reliable cooling. It supports multiple socket types, ensuring compatibility with a range of processors. Ideal for those seeking both high performance and aesthetic appeal.",
+      price: "11,050",
+      specifications: {
+        Company: "NZXT",
+        RPM: "1800",
+        Color: "Black",
+        Size: "240 mm"
       },
-      "socket": [
+      socket: [
         "LGA 1700",
         "LGA 1200",
         "LGA 1150",
@@ -873,46 +905,48 @@ storage: {
         "sTRX4",
         "TR4"
       ],
-      "priceHistory": [
+      priceHistory: [
         { "date": "2024-08-01", "price": "11,050" },
         { "date": "2024-09-01", "price": "11,250" },
         { "date": "2024-10-01", "price": "11,000" }
       ]
     },
-    "Lian Li Galahad II Trinity SL-INF": {
-      "image": "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131050/Lian_Li_Galahad_II_Trinity_SL-INF_cbuczg.webp",
-      "description": "The Lian Li Galahad II Trinity SL-INF is a high-end liquid cooler with a massive 360 mm radiator designed for superior cooling performance. It boasts an impressive RPM of 2100 and a sleek white finish that adds a touch of elegance to your build. The cooler is engineered for maximum efficiency and is compatible with a wide range of sockets. Its advanced cooling technology and stylish design make it a top choice for enthusiasts seeking peak performance and visual impact.",
-      "price": "16,920",
-      "specifications": {
-        "Company": "Lian Li",
-        "RPM": "2100",
-        "Color": "White",
-        "Size": "360 mm"
+    {
+     name:  "Lian Li Galahad II Trinity SL-INF",
+      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131050/Lian_Li_Galahad_II_Trinity_SL-INF_cbuczg.webp",
+      description: "The Lian Li Galahad II Trinity SL-INF is a high-end liquid cooler with a massive 360 mm radiator designed for superior cooling performance. It boasts an impressive RPM of 2100 and a sleek white finish that adds a touch of elegance to your build. The cooler is engineered for maximum efficiency and is compatible with a wide range of sockets. Its advanced cooling technology and stylish design make it a top choice for enthusiasts seeking peak performance and visual impact.",
+      price: "16,920",
+      specifications: {
+        Company: "Lian Li",
+        RPM: "2100",
+        Color: "White",
+        Size: "360 mm"
       },
-      "socket": [
+      socket: [
         "LGA 1700",
         "LGA 1200",
         "LGA 1150",
         "AM5",
         "AM4"
       ],
-      "priceHistory": [
+      priceHistory: [
         { "date": "2024-08-01", "price": "16,920" },
         { "date": "2024-09-01", "price": "17,100" },
         { "date": "2024-10-01", "price": "16,800" }
       ]
     },
-    "NZXT Kraken M22": {
-      "image": "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131052/NZXT_Kraken_M22_b8qwb8.jpg",
-      "description": "The NZXT Kraken M22 is a compact yet powerful liquid cooler featuring a 120 mm radiator and an RPM of 2000. It combines efficient cooling with a sleek black design, making it suitable for various builds. The cooler's small size and high performance make it ideal for cases with limited space. It offers excellent cooling capabilities and broad socket support, ensuring compatibility with a variety of CPUs. Perfect for users seeking a blend of performance and compact design.",
-      "price": "6,699",
-      "specifications": {
-        "Company": "NZXT",
-        "RPM": "2000",
-        "Color": "Black",
-        "Size": "120 mm"
+    {
+      name:  "NZXT Kraken M22",
+      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131052/NZXT_Kraken_M22_b8qwb8.jpg",
+    description: "The NZXT Kraken M22 is a compact yet powerful liquid cooler featuring a 120 mm radiator and an RPM of 2000. It combines efficient cooling with a sleek black design, making it suitable for various builds. The cooler's small size and high performance make it ideal for cases with limited space. It offers excellent cooling capabilities and broad socket support, ensuring compatibility with a variety of CPUs. Perfect for users seeking a blend of performance and compact design.",
+      price: "6,699",
+      specifications: {
+        Company: "NZXT",
+        RPM: "2000",
+        Color: "Black",
+        Size: "120 mm"
       },
-      "socket": [
+      socket: [
         "LGA 1200",
         "LGA 1151",
         "LGA 1150",
@@ -931,519 +965,12 @@ storage: {
         "AM2+",
         "AM2"
       ],
-      "priceHistory": [
+      priceHistory: [
         { "date": "2024-08-01", "price": "6,699" },
         { "date": "2024-09-01", "price": "6,750" },
         { "date": "2024-10-01", "price": "6,600" }
       ]
     }
-}
+]
 };
 
-export const componentDataArray = {
-  cpu: [
-    {
-      name: "AMD Ryzen 7 7800X3D",
-      description:
-        "The AMD Ryzen 7 7800X3D is built for high performance. It features 8 cores and 16 threads, ensuring smooth multitasking and high-speed processing. With a base clock of 4.2 GHz and a boost clock of 5.0 GHz, it handles demanding tasks with ease. The AM5 socket provides compatibility with the latest motherboards. Integrated Radeon graphics make it a versatile choice for gaming and productivity.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130966/AMD-Ryzen-7-7800X3D_ducjmv.avif",
-      price: "34900", 
-      Company: "AMD",
-      Cores: "8",
-      Threads: "16",
-      "Base Clock": "4.2 GHz",
-      "Boost Clock": "5.0 GHz",
-      Socket: "AM5",
-      Graphics: "Radeon",
-    },
-    {
-      name: "AMD Ryzen 5 5600X",
-      description:
-        "The AMD Ryzen 5 5600X offers excellent value for mid-range builds. With 6 cores and 12 threads, it delivers strong performance in both gaming and productivity. A base clock of 3.7 GHz and boost clock of 4.6 GHz ensure quick responses and smooth operations. Its AM4 socket provides broad compatibility with various motherboards. Designed for systems with discrete graphics, it’s ideal for dedicated GPU setups.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130965/AMD-Ryzen-5-5600X_vrzeu4.avif",
-      price: "14970",
-      Company: "AMD",
-      Cores: "6",
-      Threads: "12",
-      "Base Clock": "3.7 GHz",
-      "Boost Clock": "4.6 GHz",
-      Socket: "AM4",
-      Graphics: "Discrete",
-    },
-    {
-      name: "Intel Core i9-14900K",
-      description:
-        "The Intel Core i9-14900K is a powerhouse for enthusiasts and professionals. Featuring 24 cores and 32 threads, it excels in multitasking and intensive workloads. Its base clock of 3.2 GHz can boost up to an impressive 6 GHz, making it perfect for high-performance computing. The LGA 1700 socket ensures future-proofing with new motherboard support. Integrated Intel UHD Graphics 770 provides decent onboard graphics performance.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130967/Intel-Core-_i9-14900K_eg8qm1.jpg",
-      price: "51999",
-      Company: "Intel",
-      Cores: "24",
-      Threads: "32",
-      "Base Clock": "3.2 GHz",
-      "Boost Clock": "6 GHz",
-      Socket: "LGA 1700",
-      Graphics: "Intel UHD Graphics 770",
-      UNLOCKED: "Yes",
-        },
-    {
-      name: "Intel Core i7-14700K",
-      description:
-        "The Intel Core i7-14700K balances performance and efficiency with 20 cores and 28 threads. Ideal for gamers and content creators, it offers a base clock of 3.4 GHz and a boost clock of 5.6 GHz. The LGA 1700 socket supports the latest motherboards, ensuring a future-proof build. Integrated Intel UHD Graphics 770 handles everyday tasks without needing a discrete GPU.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130970/Intel-Core-i7-14700K_zpko8j.jpg",
-      price: "37850",
-      Company: "Intel",
-      Cores: "20",
-      Threads: "28",
-      "Base Clock": "3.4 GHz",
-      "Boost Clock": "5.6 GHz",
-      Socket: "LGA 1700",
-      Graphics: "Intel UHD Graphics 770",
-
-    },
-    {
-      name: 'AMD Ryzen 9 7900X',
-      description:
-        "The AMD Ryzen 9 7900X offers top-tier performance with 12 cores and 24 threads. It’s built for demanding applications and gaming with a base clock of 4.7 GHz and a boost clock of 5.6 GHz. The AM5 socket provides compatibility with the latest motherboard technology. Integrated Radeon graphics offer reliable performance for everyday tasks.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130966/AMD-Ryzen-9-7900X_ct6srt.avif",
-      price: "36700",
-      Company: "AMD",
-      Cores: "12",
-      Threads: "24",
-      "Base Clock": "4.7 GHz",
-      "Boost Clock": "5.6 GHz",
-      Socket: "AM5",
-      Graphics: "Radeon",
-
-    },
-    {
-      name: "Intel Core i5-13600KF",
-      description:
-        "The Intel Core i5-13600KF is a solid mid-range option with 16 cores and 20 threads. It offers a base clock of 3.5 GHz and a boost clock of 5.1 GHz, making it great for gaming and productivity. The LGA 1700 socket ensures compatibility with newer motherboards. Designed for systems with discrete graphics, it’s perfect for dedicated GPU setups.",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130969/Intel-Core-i5-13600KF_nfx5qe.jpg",
-      price: "26500",
-      Company: "Intel",
-      Cores: "16",
-      Threads: "20",
-      "Base Clock": "3.5 GHz",
-      "Boost Clock": "5.1 GHz",
-      Socket: "LGA 1700",
-      Graphics: "Discrete",
-
-
-    },
-  ],
-  gpu: [
-    {
-      name: "MSI GeForce RTX 3060 Ventus 2X 12G",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131033/MSI_GeForce_RTX_3060_Ventus_2X_12G_gw8dz1.png",
-      price: "26580",
-      Company: "MSI",
-      "Base Clock": "1320 MHz",
-      "Boost Clock": "1777 MHz",
-      Memory: "12 GB",
-      Chipset: "GeForce RTX 3060",
-      Color: "Black",
-    },
-    {
-      name: "Gigabyte EAGLE OC",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131032/Gigabyte_EAGLE_OC_gzqz4y.webp",
-      price: "29379",
-      Company: "Gigabyte",
-      "Base Clock": "1830 MHz",
-      "Boost Clock": "2505 MHz",
-      Memory: "8 GB",
-      Chipset: "GeForce RTX 4060",
-      Color: "Black",
-
-
-    },
-    {
-      name: "Asus ROG STRIX GAMING OC",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131031/Asus_ROG_STRIX_GAMING_OC_kvwpx0.png",
-      price: "220499",
-      Company: "Asus",
-      "Base Clock": "2253 MHz",
-      "Boost Clock": "2640 MHz",
-      Memory: "24 GB",
-      Chipset: "GeForce RTX 4090",
-      Color: "Black",
-
-    },
-    {
-      name: "XFX Speedster MERC 310 Black Edition",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131036/XFX_Speedster_MERC_310_Black_Edition_f1upcm.jpg",
-      price: "130244",
-      Company: "XFX",
-      "Base Clock": "2300 MHz",
-      "Boost Clock": "2615 MHz",
-      Memory: "24 GB",
-      Chipset: "Radeon RX 7900 XTX",
-      Color: "Black",
-
-
-    },
-    {
-      name: "Sapphire PULSE",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131034/Sapphire_PULSE_c0e9ga.jpg",
-      price: "75800",
-      Company: "Sapphire",
-      "Base Clock": "2000 MHz",
-      "Boost Clock": "2450 MHz",
-      Memory: "20 GB",
-      Chipset: "Radeon RX 7900 XT",
-      Color: "Red",
-
-
-    },
-  ],
-  ram: [
-    {
-      name: "G.Skill Trident Z RGB 16 GB",
-      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131067/G.Skill_Trident_Z_RGB_16_GB_oza6ce.webp",
-      price: "5450",
-      Compnay: "G.Skill",
-      Capacity: "8 GB",
-      Speed: "3600 MHz",
-      Type: "DDR4",
-      Color: "Black",
-      RGB: "Yes"
-    },
-    {
-      name: "G.Skill Trident Z 32GB",
-      description: "Trident Z5 RGB DDR5 memory is the latest G.SKILL flagship series designed for ultra-high extreme performance on next-gen DDR5 platforms. Featuring a sleek and streamlined aluminum heatspreader design, available in metallic silver or matte black, the Trident Z5 RGB DDR5 memory is the ideal choice for gamers, overclockers, content creators, and enthusiasts to build a high-performance system.",
-      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131068/G.Skill_Trident_Z5_RGB_32_GB_lgluqm.jpg",
-      price: "12440",
-      Compnay: "G.Skill",
-      Capacity: "16 GB",
-      Speed: "5600 MHz",
-      Type: "DDR5",
-      Color: "Black",
-      RGB: "Yes"
-    },
-    {
-      name: "Corsair Vengeance LPX 32 GB",
-      image:
-      "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131066/Corsair_Vengeance_LPX_32_GB_hb9dqn.jpg", 
-      description: "Hand-sorted memory chips ensure high performance with generous overclocking headroom VENGEANCE LPX is optimized for wide compatibility with the latest Intel and AMD DDR4 motherboards",
-      price: "15669",
-      Compnay: "Corsair",
-      Capacity: "8 GB",
-      Speed: "2133 MHz",
-      Type: "DDR4",
-      Color: "Black",
-      RGB: "No"
-    },
-    {
-      name: "Corsair Dominator Platinum RGB 64 GB",
-      image:
-        "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131064/Corsair_Dominator_Platinum_RGB_64_GB_exwy8u.jpg",
-      description: "Hand-sorted memory chips ensure high performance with generous overclocking headroom VENGEANCE LPX is optimized for wide compatibility with the latest Intel and AMD DDR4 motherboards",
-      price: "37989",
-      Compnay: "Corsair",
-      Capacity: "16 GB",
-      Speed: "6400 MHz",
-      Type: "DDR5",
-      Color: "Black",
-      RGB: "Yes"
-    },
-    {
-      name: "Kingston FURY 128 GB",
-      image:
-        "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131069/Kingston_FURY_128_GB_pamhqr.jpg",
-      description: "Kingston FURY Beast 128GB (4x32GB) 3600MT/s DDR4 CL18 Desktop Memory Kit of 4 | Infrared Syncing | Intel XMP | AMD Ryzen | Plug n Play | KF436C18BBK4/128, Black Low-profile heat spreader design Cost-efficient, high-performance DDR4 upgrade Intel XMP-ready. Ready for AMD Ryzen",
-      price: "58236",
-      Compnay: "Kingston",
-      Capacity: "32 GB",
-      Speed: "3600 MHz",
-      Type: "DDR5",
-      Color: "White",
-      RGB: "No"
-    },
-  ],
-  storage: [
-    {
-      name: "Western Digital Black SN770",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131088/Western_Digital_Black_SN770_ymu7zc.png",
-      price: "6630",
-      Company: "Western Digital",
-      Capacity: "1 TB",
-      Type: "SSD",
-    },
-    {
-      name: "Crucial P3 Plus",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131084/Crucial_P3_Plus_sy0lvb.jpg",
-      price: "3450",
-      Company: "Crucial",
-      Capacity: "1 TB",
-      Type: "SSD",
-    },
-    {
-      name: "Samsung 970 Evo Plus",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131085/Samsung_970_Evo_Plus_qzybeo.jpg",
-        price: "6799",
-        Company: "Samsung",
-        Capacity: "500 GB",
-        Type: "SSD",
-        Cache: "512",
-      },
-    {
-      name: "Seagate Barracuda Compute",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131087/Seagate_Barracuda_Compute_lbtgrv.jpg",
-      price: "5799",
-      Company: "Seagate",
-      Capacity: "2 TB",
-      Type: "HDD",
-      Cache: "256",
-    },
-    {
-      name: "Western Digital Blue",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131089/Western_Digital_Blue_macnyp.jpg",
-      price: "5700",
-      Company: "Western Digital",
-      Capacity: "2 TB",
-      Type: "HDD",
-      Cache: "256",
-    },
-  ],
-  motherboard: [
-    {
-      name: "Gigabyte B650 AORUS ELITE AX",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721229324/Gigabyte-B650-Aorus-Elite-AX-Motherboard-2_ziguux.jpg",
-      price: "21800",
-      Company: "Gigabyte",
-      Socket: "AM5",
-      "Form Factor": "ATX",
-      "Max Memory": "192 GB",
-      "Memory Support Type": "DDR5",
-      Slots: "4",
-    },
-    {
-      name: "Asus ROG STRIX X670E-E GAMING WIFI",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228930/Asus_ROG_STRIX_X670E-E_GAMING_WIFI_e2jbbm.jpg",
-      price: "49600",
-      Company: "Asus",
-      Socket: "AM5",
-      "Form Factor": "ATX",
-      "Max Memory": "192 GB",
-      "Memory Support Type": "DDR5",
-      Slots: "4",
-    },
-    {
-      name: "MSI PRO B650-P WIFI",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228925/MSI_PRO_B650-P_WIFI_nsdzpq.jpg",
-      price: "20400",
-      Company: "MSI",
-      Socket: "AM5",
-      "Form Factor": "ATX",
-      "Max Memory": "192 GB",
-      "Memory Support Type": "DDR5",
-      Slots: "4",
-    },
-    {
-      name: "Asus ROG STRIX B550-F GAMING WIFI II",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228921/Asus_ROG_STRIX_B550-F_GAMING_WIFI_II_x6xyka.jpg",
-      price: "22300",
-      Company: "Asus",
-      Socket: "AM4",
-      "Form Factor": "ATX",
-      "Max Memory": "128 GB",
-      "Memory Support Type": "DDR4",
-      Slots: "4",
-    },
-    {
-      name: "Gigabyte B550 UD AC",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228920/Gigabyte_B550_UD_AC_taegi7.jpg",
-      price: "12738",
-      Company: "Gigabyte",
-      Socket: "AM4",
-      "Form Factor": "ATX",
-      "Max Memory": "128 GB",
-      "Memory Support Type": "DDR4",
-      Slots: "4",
-    },
-    {
-      name: "MSI A520M-A PRO",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228959/MSI_A520M-A_PRO_qvwqiw.jpg",
-      price: "4280",
-      Company: "MSI",
-      Socket: "AM4",
-      "Form Factor": "Micro ATX",
-      "Max Memory": "64 GB",
-      "Memory Support Type": "DDR4",
-      Slots: "2",
-    },
-    {
-      name: "Asus ROG STRIX Z790-A GAMING WIFI II",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228954/Asus_ROG_STRIX_Z790-A_GAMING_WIFI_II_mutx4s.jpg",
-      price: "37070",
-      Company: "Asus",
-      Socket: "LGA 1700",
-      "Form Factor": "ATX",
-      "Max Memory": "192 GB",
-      "Memory Support Type": "DDR5",
-      Slots: "4",
-    },
-    {
-      name: "MSI MAG B760M MORTAR WIFI II",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228946/MSI_MAG_B760M_MORTAR_WIFI_II_ndrk9s.jpg",
-      price: "18590",
-      Company: "MSI",
-      Socket: "LGA 1700",
-      "Form Factor": "Micro ATX",
-      "Max Memory": "192 GB",
-      "Memory Support Type": "DDR5",
-      Slots: "4",
-    },
-    {
-      name: "Gigabyte H610I",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1721228941/Gigabyte_H610I_xdary3.jpg",
-      price: "8880",
-      Company: "Gigabyte",
-      Socket: "LGA 1700",
-      "Form Factor": "Mini ITX",
-      "Max Memory": "64 GB",
-      "Memory Support Type": "DDR4",
-      Slots: "2",
-    },
-  ],
-  power_supply: [
-    {
-      name: "Gigabyte P550B",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131016/Gigabyte_P550B_jjiddn.png",
-      price: "3650",
-      Company: "Gigabyte",
-      Type: "ATX",
-      Wattage: "550W",
-      Efficiency: "Bronze",
-      Modular: "Non-modular",
-      Color: "Black",
-    },
-    {
-      name: "Gigabyte UD750GM",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131018/Gigabyte_UD750GM_ohmqxz.png",
-      price: "7250",
-      Company: "Gigabyte",
-      Type: "ATX",
-      Wattage: "750W",
-      Efficiency: "Gold",
-      Modular: "Full Modular",
-      Color: "Black",
-    },
-    {
-      name: "EVGA SuperNOVA 850 P5",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131015/EVGA_SuperNOVA_850_P5_oqofoz.png",
-      price: "9999",
-      Company: "EVGA",
-      Type: "ATX",
-      Wattage: "850W",
-      Efficiency: "Platinum",
-      Modular: "Full Modular",
-      Color: "Black",
-    },
-  ],
-  cabinet: [
-    {
-      name: "NZXT H9 Flow",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/NZXT_H9_Flow_b4aqiq.avif",
-      price: "15220",
-      Company: "NZXT",
-      Type: "ATX Mid Tower",
-      "Side Panel": "Tempered Glass",
-      "External Volume": "66.9",
-      "Internal 35 Bays": "2",
-      Color: "White",
-    },
-    {
-      name: "NZXT H6 Flow",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/NZXT_H6_Flow_vllmvf.avif",
-      price: "10580",
-      Company: "NZXT",
-      Type: "ATX Mid Tower",
-      "Side Panel": "Tempered Glass",
-      "External Volume": "51.8",
-      "Internal 35 Bays": "1",
-      Color: "White",
-    },
-    {
-      name: "Montech AIR 100 ARGB",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130942/Montech_AIR_100_ARGB_ry0uj1.png",
-      price: "5850",
-      Company: "Montech",
-      Type: "MicroATX Mid Tower",
-      "Side Panel": "Tempered Glass",
-      "External Volume": "36.1",
-      "Internal 35 Bays": "2",
-      Color: "Black",
-    },
-    {
-      name: "Lian Li O11 Vision",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130941/Lian_Li_O11_Vision_utlfb5.webp",
-      price: "14500",
-      Company: "Lian Li",
-      Type: "ATX Mid Tower",
-      "Side Panel": "Tempered Glass",
-      "External Volume": "67.8",
-      "Internal 35 Bays": "2",
-      Color: "White",
-    },
-    {
-      name: "Phanteks XT PRO",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719130944/Phanteks_XT_PRO_iehh5w.jpg",
-      price: "7000",
-      Company: "Phanteks",
-      Type: "ATX Mid Tower",
-      "Side Panel": "Tempered Glass",
-      "External Volume": "51.8",
-      "Internal 35 Bays": "2",
-      Color: "Black",
-    },
-  ],
-  cooler: [
-    {
-      name: "Thermalright Peerless Assassin 120 SE",
-      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131053/Thermalright_Peerless_Assassin_120_SE_ifqxvx.jpg",
-      price: "8990",
-      Company: "Thermalright",
-      RPM: "1550",
-      Color: "Black",
-      Size: "120 mm",
-    },
-    {
-      name: "Deepcool GAMMAXX L240 A-RGB",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131049/Deepcool_GAMMAXX_L240_A-RGB_diiybp.jpg",
-      price: "5710",
-      Company: "Deepcool",
-      RPM: "1800",
-      Color: "Black",
-      Size: "240 mm",
-    },
-    {
-      name: "NZXT Kraken 240",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131051/NZXT_Kraken_240_xmhekm.jpg",
-      price: "11050",
-      Company: "NZXT",
-      RPM: "1800",
-      Color: "Black",
-      Size: "240 mm",
-    },
-    {
-      name: "Lian Li Galahad II Trinity SL-INF",
-      image: "https://res.cloudinary.com/dwn8lficg/image/upload/v1719131050/Lian_Li_Galahad_II_Trinity_SL-INF_cbuczg.webp",
-      price: "16920",
-      Company: "Lian Li",
-      RPM: "2100",
-      Color: "White",
-      Size: "360 mm",
-    },
-    {
-      name: "NZXT Kraken M22",
-      image:"https://res.cloudinary.com/dwn8lficg/image/upload/v1719131052/NZXT_Kraken_M22_b8qwb8.jpg",
-      price: "6699",
-      Company: "NZXT",
-      RPM: "2000",
-      Color: "Black",
-      Size: "120 mm",
-    },
-  ],
-  // Add other components data here
-};

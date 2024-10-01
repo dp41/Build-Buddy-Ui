@@ -1,6 +1,8 @@
 // Import the component data from the module
 import { componentData } from '../Data/componentData.js'; // Ensure the file extension is correct
 
+
+
 // Cache DOM elements
 const componentNameElem = document.getElementById('componentName');
 const componentDescriptionElem = document.getElementById('componentDescription');
@@ -10,11 +12,13 @@ let priceChart;
 
 // Function to dynamically load component details
 function loadComponentDetails(type, name) {
-    const component = componentData[type]?.[name]; // Use optional chaining to handle missing data
-    console.log(component);
-    
+    // Find the component in the componentData[type] array
+    const componentList = componentData[type];
+    const component = componentList?.find(item => item.name === name); // Find the component by name
+
     if (component) {
-        componentNameElem.innerText = name;
+        // Update component details
+        componentNameElem.innerText = component.name;
         componentImageElem.src = component.image;
 
         // Update the price element
@@ -33,7 +37,7 @@ function loadComponentDetails(type, name) {
         // Display the description as a list
         componentDescriptionElem.innerHTML = ''; // Clear existing content
         if (typeof component.description === 'string') {
-            // Split the description into items based on a delimiter (e.g., period followed by a space)
+            // Split the description into items based on a period followed by a space
             const items = component.description.split('. ').filter(item => item.trim() !== '');
             if (items.length > 0) {
                 const ul = document.createElement('ul');
@@ -45,11 +49,9 @@ function loadComponentDetails(type, name) {
                 });
                 componentDescriptionElem.appendChild(ul);
             } else {
-                // Fallback if no valid items
                 componentDescriptionElem.innerText = 'No description available.';
             }
         } else {
-            // Fallback if description is not a string
             componentDescriptionElem.innerText = 'Invalid description format.';
         }
 
@@ -59,7 +61,7 @@ function loadComponentDetails(type, name) {
         const data = component.priceHistory.map(entry => parseFloat(entry.price.replace(/,/g, '')));
 
         if (priceChart) {
-            priceChart.destroy();
+            priceChart.destroy(); // Destroy previous chart instance if exists
         }
 
         priceChart = new Chart(ctx, {
@@ -99,4 +101,3 @@ if (type && name) {
 } else {
     console.error('Component type and name are required in the URL query parameters.');
 }
-

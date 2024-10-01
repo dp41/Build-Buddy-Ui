@@ -1,5 +1,6 @@
-import { componentDataArray } from "../Data/componentData.js"; // Ensure the file path is correct
+// Importing necessary data
 import { filterOptions } from '../Data/filterOptions.js';
+import { componentData } from '../Data/componentData.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -20,22 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
     pageTitleElement.textContent = componentTitles[componentType] || "Component List";
     pageTitleElement.classList.add("text-custom-dark");
 
-    let componentList = componentDataArray[componentType] || [];
+    let componentList = componentData[componentType] || [];
     const componentListElement = document.getElementById("component-list");
 
     // Function to create and append cards
     const createCard = ({ name, image, price }) => {
         return `
-      <div class="component-card group flex flex-col items-center gap-4 rounded-lg bg-white p-6 border shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-custom-primary duration-300 cursor-pointer relative">
-        <img src="${image}" alt="${name}" class="h-28 w-28 rounded-lg mb-4">
-        <h3 class="text-xl font-semibold text-custom-dark">${name}</h3>
-        <p class="text-lg text-gray-600">₹${price}</p>
-        <a href="/pages/Component_Detail_Page/componentDetail.html?type=${componentType}&name=${encodeURIComponent(name)}"
-           class="bg-custom-dark text-white rounded-full py-2 px-4 mt-4 text-center font-semibold hover:bg-blue-700 transition-colors duration-300">
-          Show More
-        </a>
-      </div>
-    `;
+        <div class="component-card group flex flex-col items-center gap-4 rounded-lg bg-white p-6 border shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl hover:bg-custom-primary duration-300 cursor-pointer relative">
+            <img src="${image}" alt="${name}" class="h-28 w-28 rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-custom-dark">${name}</h3>
+            <p class="text-lg text-gray-600">₹${price}</p>
+            <a href="/pages/Component_Detail_Page/componentDetail.html?type=${componentType}&name=${encodeURIComponent(name)}"
+               class="bg-custom-dark text-white rounded-full py-2 px-4 mt-4 text-center font-semibold hover:bg-blue-700 transition-colors duration-300">
+               Show More
+            </a>
+        </div>
+        `;
     };
 
     // Function to render components
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to filter components based on selected price range
     const filterByPrice = () => {
         const maxPrice = parseInt(priceRangeInput.value);
-        const filteredByPrice = componentList.filter(component => component.price <= maxPrice);
+        const filteredByPrice = componentList.filter(component => parseInt(component.price.replace(/,/g, '')) <= maxPrice);
         renderComponentList(filteredByPrice);
     };
 
@@ -88,10 +89,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to filter components based on selected options
     const filterComponents = () => {
-        // Get selected checkboxes
         const selectedFilters = {};
         const checkboxes = document.querySelectorAll(".filter-checkbox:checked");
-        
+
         checkboxes.forEach((checkbox) => {
             const category = checkbox.getAttribute("data-category");
             const option = checkbox.id;
@@ -104,18 +104,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Filter the component list based on selected filters
         const filteredList = componentList.filter((component) => {
-            return Object.entries(selectedFilters).every(([category, selectedOptions]) => {
-                return selectedOptions.includes(component[category]);
+            // Check if component meets all selected filters
+            return Object.keys(selectedFilters).every(category => {
+                // Here, you'll need to customize the condition based on your specifications.
+                // For instance, if you want to check specifications against selected options:
+                return selectedFilters[category].includes(component.specifications[category]);
             });
         });
 
         renderComponentList(filteredList);
     };
 
-    // Event listeners for filter checkboxes
+    // Attach event listeners to filter checkboxes
     const filterCheckboxes = document.querySelectorAll(".filter-checkbox");
-    filterCheckboxes.forEach((checkbox) => {
+    filterCheckboxes.forEach(checkbox => {
         checkbox.addEventListener("change", filterComponents);
     });
-    
 });
